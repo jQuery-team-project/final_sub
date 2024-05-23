@@ -183,14 +183,24 @@
   .hs_part1 img,
   .hs_part2>img,
   .hs_part3 img {
-    width: 54%;
+    width: 100%;
     object-fit: cover;
   }
   .hsWrapper .text-wrapper {
-    width: 80%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     margin: auto;
+    text-align: center;
+    z-index: 9999;
   }
-  .hsWrapper .horizontal_scroll .hs_part2 .text-wrapper img {
+  .hsWrapper .horizontal_scroll .hs_part1 .text-wrapper p.phrase {
+    margin: 0 auto;
+    width: 80%;
+    /* text-align: center; */
+  }
+  .hsWrapper .horizontal_scroll .hs_part2 .text-wrapper img, .hsWrapper .horizontal_scroll .hs_part3 .text-wrapper img {
     display: none;
   }
 
